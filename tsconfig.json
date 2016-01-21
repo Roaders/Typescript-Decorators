@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "diagnostics": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "experimentalDecorators": true
+    },
+    "files": [
+        "./typings/tsd.d.ts",
+        "./decorators.ts",
+        "./tests/spec/autobindTests.ts"
+    ]
+}

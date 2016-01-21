@@ -1,0 +1,4 @@
+tests/spec/*.js
+typings/
+autobind/*.js
+decorators.js
