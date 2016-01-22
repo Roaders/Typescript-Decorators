@@ -9,7 +9,7 @@
     },
     "files": [
         "./typings/tsd.d.ts",
-        "./decorators.ts",
-        "./tests/spec/autobindTests.ts"
+        "./tests/spec/autobindTests.ts",
+        "./autobind/autobind.ts"
     ]
 }

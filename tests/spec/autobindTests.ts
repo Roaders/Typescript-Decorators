@@ -27,8 +27,8 @@ module PricklyThistle.Decorators.Tests {
         const freddyFullName: string = "Freddy Krueger";
         const hannibalFullName: string = "Hannibal Lecter";
         
-        const freddyPrintFunc: () => string = freddy.printName;
-        const hannibalPrintFunc: () => string = hannibal.printName;
+        const freddyPrintFunc = freddy.printName;
+        const hannibalPrintFunc = hannibal.printName;
         
         it( "should return expected value when calling function directly", () => {
             expect( freddy.printName() ).toEqual( freddyFullName );

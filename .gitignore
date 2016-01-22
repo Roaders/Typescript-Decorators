@@ -2,3 +2,6 @@ tests/spec/*.js
 typings/
 autobind/*.js
 decorators.js
+.idea/
+Typescript-Decorators.iml
+node_modules/

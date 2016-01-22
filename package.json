@@ -1,0 +1,31 @@
+{
+  "name": "Typescript-Decorators",
+  "version": "1.0.0",
+  "description": "A selection of example Typescript decorators",
+  "main": "tsconfig.json",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "postinstall": "node node_modules/tsd/build/cli.js install",
+    "build": "node node_modules/typescript/lib/tsc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roaders/Typescript-Decorators.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Decorators"
+  ],
+  "author": "Giles Roadnight",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Roaders/Typescript-Decorators/issues"
+  },
+  "homepage": "https://github.com/Roaders/Typescript-Decorators",
+  "dependencies": {
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5"
+  }
+}
