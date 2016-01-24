@@ -16,3 +16,5 @@ To run the tests just load the tests/SpecRunner.html page in your browser
 Alternatively you can run tests in Karma
 
     npm test
+    
+Thanks to Jonny Reeves (http://jonnyreeves.co.uk/2015/basic-typescript-dependency-injection-with-decorators/) and Wolk Software (http://blog.wolksoftware.com/decorators-metadata-reflection-in-typescript-from-novice-to-expert-part-ii) for posts that I based a lot of hte code here on.
