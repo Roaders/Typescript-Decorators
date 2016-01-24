@@ -15,4 +15,4 @@ To run the tests just load the tests/SpecRunner.html page in your browser
 
 Alternatively you can run tests in Karma
 
-   npm test
+    npm test
