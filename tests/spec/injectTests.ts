@@ -35,14 +35,23 @@ module PricklyThistle.Decorators.Tests {
         initTwoValues: {propOne: any, propTwo: any}[] = [];
 
         initOne(){
+            if( !this.initOneValues ){
+                this.initOneValues = [];
+            }
+
             this.initOneValues.push( {propOne: this.propertyOne, propTwo: this.propertyTwo} );
         }
 
         initTwo(){
+            if( !this.initTwoValues ){
+                this.initTwoValues = [];
+            }
+
             this.initTwoValues.push( {propOne: this.propertyOne, propTwo: this.propertyTwo} );
         }
     }
 
+    @injectClass()
     class SampleClassWithInit extends SampleClass{
 
         @init()
@@ -56,6 +65,7 @@ module PricklyThistle.Decorators.Tests {
         }
     }
 
+    @injectClass()
     class SampleClassWithInitAndInject extends SampleClass{
 
         @inject( "injectIdOne" )
@@ -107,7 +117,6 @@ module PricklyThistle.Decorators.Tests {
 
             it( "and call init functions once when constructed before injector set", () => {
                 var instance: SampleClass = new SampleClassWithInit();
-                expectEmptyClass( instance );
                 setupInjector();
                 expectInitialisedEmptyClass(instance);
             } );
@@ -123,7 +132,6 @@ module PricklyThistle.Decorators.Tests {
 
             it( "and setup class when injector set", () => {
                 var instance: SampleClass = new SampleClassWithInitAndInject();
-                expectEmptyClass( instance );
                 setupInjector();
                 expectInjectedInitialisedClass(instance);
             } );
