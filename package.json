@@ -8,7 +8,8 @@
   },
   "scripts": {
     "postinstall": "node node_modules/tsd/build/cli.js install",
-    "start": "node node_modules/typescript/lib/tsc.js"
+    "start": "node node_modules/typescript/lib/tsc.js",
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,9 @@
   },
   "homepage": "https://github.com/Roaders/Typescript-Decorators",
   "dependencies": {
+    "karma": "^0.13.19",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "phantomjs": "^1.9.19",
     "tsd": "^0.6.5",
     "typescript": "^1.7.5"
   }

@@ -5,3 +5,5 @@ decorators.js
 .idea/
 Typescript-Decorators.iml
 node_modules/
+decorators/autobind/autobind.js
+decorators/inject/inject.js
