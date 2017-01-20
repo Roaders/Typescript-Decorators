@@ -26,10 +26,10 @@
   },
   "homepage": "https://github.com/Roaders/Typescript-Decorators",
   "dependencies": {
-    "karma": "^0.13.19",
-    "karma-phantomjs-launcher": "^0.2.3",
-    "phantomjs": "^1.9.19",
+    "karma": "^1.4.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "phantomjs": "^2.1.7",
     "tsd": "^0.6.5",
-    "typescript": "^1.7.5"
+    "typescript": "^2.1.5"
   }
 }
