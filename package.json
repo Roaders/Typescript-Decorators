@@ -9,7 +9,9 @@
   "scripts": {
     "postinstall": "node node_modules/tsd/build/cli.js install",
     "start": "node node_modules/typescript/lib/tsc.js",
-    "test": "karma start"
+    "test": "karma start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,8 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "phantomjs": "^2.1.7",
     "tsd": "^0.6.5",
-    "typescript": "^2.1.5"
-  }
+    "typescript": "^2.1.5",
+    "snyk": "^1.24.5"
+  },
+  "snyk": true
 }
