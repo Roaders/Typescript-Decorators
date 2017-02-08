@@ -32,7 +32,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "phantomjs": "^2.1.7",
     "tsd": "^0.6.5",
-    "typescript": "^2.1.5",
+    "typescript": "^2.1.6",
     "snyk": "^1.24.6"
   },
   "snyk": true
