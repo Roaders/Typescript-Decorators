@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.0
+version: v1.7.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -14,3 +14,6 @@ patch:
   'npm:tough-cookie:20160722':
     - phantomjs > request > tough-cookie:
         patched: '2017-01-23T07:55:24.629Z'
+  'npm:ms:20170412':
+    - karma-phantomjs-launcher > phantomjs-prebuilt > extract-zip > debug > ms:
+        patched: '2017-08-18T07:18:07.629Z'
