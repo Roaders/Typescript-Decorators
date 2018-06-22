@@ -11,7 +11,8 @@
     "start": "node node_modules/typescript/lib/tsc.js",
     "test": "karma start",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "npm run snyk-protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,12 @@
   },
   "homepage": "https://github.com/Roaders/Typescript-Decorators",
   "dependencies": {
-    "karma": "^1.4.0",
+    "karma": "^2.0.3",
     "karma-phantomjs-launcher": "^1.0.2",
     "phantomjs": "^2.1.7",
     "tsd": "^0.6.5",
     "typescript": "^2.1.5",
-    "snyk": "^1.24.6"
+    "snyk": "^1.83.0"
   },
   "snyk": true
 }
