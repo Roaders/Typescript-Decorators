@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.0
+version: v1.13.3
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -14,3 +14,24 @@ patch:
   'npm:tough-cookie:20160722':
     - phantomjs > request > tough-cookie:
         patched: '2017-01-23T07:55:24.629Z'
+  'npm:debug:20170905':
+    - karma > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2019-05-10T00:09:49.481Z'
+  'npm:hoek:20180212':
+    - phantomjs > request > hawk > hoek:
+        patched: '2019-05-10T00:09:49.481Z'
+    - phantomjs > request > hawk > boom > hoek:
+        patched: '2019-05-10T00:09:49.481Z'
+    - phantomjs > request > hawk > sntp > hoek:
+        patched: '2019-05-10T00:09:49.481Z'
+    - phantomjs > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-10T00:09:49.481Z'
+  'npm:ms:20170412':
+    - karma > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2019-05-10T00:09:49.481Z'
+  'npm:tough-cookie:20170905':
+    - phantomjs > request > tough-cookie:
+        patched: '2019-05-10T00:09:49.481Z'
+  'npm:tunnel-agent:20170305':
+    - phantomjs > request > tunnel-agent:
+        patched: '2019-05-10T00:09:49.481Z'
